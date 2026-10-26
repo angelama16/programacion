@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
-import unidad3_regex.EJ01;
-
 public class EJ01 {
 
 	public static void main(String[] args) throws IOException {

@@ -1,9 +1,9 @@
-package unidad3_strings;
+package unidad3_regex;
 
-import java.util.Scanner;
-import java.util.regex.Pattern;
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class EJ07 {
 
