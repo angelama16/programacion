@@ -1,0 +1,28 @@
+Implements a non-terminal append-and-replace step.
+
+<uppercase>This method performs the following actions:</uppercase>
+
+    It reads characters from the input sequence, starting at the append position, and
+    appends them to the given string buffer. It stops after reading the last character
+    preceding the previous match, that is, the character at index start() - 1.
+
+    It appends the given replacement string to the string buffer.
+
+    It sets the append position of this matcher to the index of the last character
+     matched, plus one, that is, to end().
+
+<uppercase>The replacement string</uppercase> may contain references to subsequences captured during the
+previous match: Each occurrence of ${name} or $g will be replaced by the result of
+evaluating the corresponding group(name) or group(g) respectively. For $g, the first
+number after the $ is always treated as part of the group reference. Subsequent
+numbers are incorporated into g if they would form a legal group reference. Only the
+numerals '0' through '9' are considered as potential components of the group reference.
+If the second group matched the string "foo", for example, then passing the replacement
+string "$2bar" would cause "foobar" to be appended to the string buffer. A dollar sign
+($) may be included as a literal in the replacement string by preceding it with a
+backslash (\$).
+
+Note that backslashes (\) and dollar signs ($) in the replacement string may cause the
+results to be different than if it were being treated as a literal replacement string.
+Dollar signs may be treated as references to captured subsequences as described above,
+and backslashes are used to escape literal characters in the replacement string. 
