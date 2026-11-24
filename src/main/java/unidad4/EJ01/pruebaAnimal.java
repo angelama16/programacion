@@ -1,4 +1,4 @@
-package unidad4.clases;
+package unidad4.EJ01;
 
 import java.time.LocalDate;
 
